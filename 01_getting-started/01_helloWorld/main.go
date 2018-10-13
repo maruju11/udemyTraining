@@ -4,6 +4,8 @@ import "fmt"
 
 func main() {
 	fmt.Println("Hello world")
-	nil := 111
+	//nil := 111
+	//fmt.Println(nil)
+	nil := "texto"
 	fmt.Println(nil)
 }

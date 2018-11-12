@@ -9,7 +9,10 @@ func main() {
 		fmt.Println(i, " - ", string(i), " - ", []byte(string(i)))
 	}
 	foo := 'a'
-	fmt.Print(foo)
-	fmt.Printf("%T \n", foo)
+	too := "a"
+	fmt.Println(foo, " - ", too)
+	fmt.Printf("%T ", foo)
+	fmt.Printf("%T \n", too)
+	fmt.Printf("%T ", rune(foo))
 	fmt.Printf("%T \n", rune(foo))
 }

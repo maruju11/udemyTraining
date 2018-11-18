@@ -4,11 +4,13 @@ import "fmt"
 
 func main() {
 	slice := []int{1, 2, 3, 4, 5}
-	newSlice := slice[2:3:4]
+	newSlice := slice[0:2:5]
+	fmt.Println(newSlice)
 	newSlice = append(newSlice, 6)
-	newSlice = append(newSlice, 60)
-	newSlice = append(newSlice, 160, 131, 1, 2, 3, 4, 5, 6, 7, 8, 9)
-	slice = append(slice, 222, 231, 21, 22, 3, 4, 5, 6, 7, 8, 22, 23, 24, 25, 25)
+	newSlice = append(newSlice, 7)
+	fmt.Println(newSlice)
+	newSlice = append(newSlice, 8, 9, 10, 11, 12, 13)
+	slice = append(slice, 222, 231, 21, 22, 23, 24)
 	fmt.Println(slice, newSlice)
 	//fmt.Printf("%T \n", slice)
 	fmt.Printf("%T \n", newSlice)

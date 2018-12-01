@@ -3,7 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	colors := map[string]string{}
+	//colors := map[string]string{}  //  um ou outro funcionam!!!
+	var colors = make(map[string]string)
 	colors["red"] = "#da1337"
 	colors["blue"] = "#ff1234"
 	colors["coral"] = "#a90223"

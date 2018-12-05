@@ -7,22 +7,26 @@ import (
 	"net/http"
 )
 
-type gResult struct {
-	Data  string 'json:"name"'
-	Valor string 'json:"craft"'
+type Gresult []struct {
+	Data  string
+	Valor string
 }
 
 func main() {
 	uri := "https://api.bcb.gov.br/dados/serie/bcdata.sgs.7418/dados?formato=json"
 
-	resp, err := http.Get(uri)
+	res, err := http.Get(uri)
 	if err != nil {
 		log.Println("Erro", err)
 		return
 	}
-	defer resp.Body.Close()
-	var gr gResult
-	err = json.NewDecoder(resp.Body).Decode(&gr)
+	defer res.Body.Close()
+
+	//temp, _ := ioutil.ReadAll(res.Body)
+
+	var gr Gresult
+	//err = json.Unmarshal(res.Body, &gr)
+	err = json.NewDecoder(res.Body).Decode(&gr)
 	if err != nil {
 		log.Println("Erro", err)
 		return

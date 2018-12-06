@@ -7,6 +7,7 @@ import (
 	"net/http"
 )
 
+// Gresult recebe os dados seriais do governo e retorna data e valor em milhoes de reais
 type Gresult []struct {
 	Data  string
 	Valor string
@@ -32,4 +33,5 @@ func main() {
 		return
 	}
 	fmt.Println(gr)
+	fmt.Println(gr[1].Data)
 }

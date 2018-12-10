@@ -7,29 +7,30 @@ import (
 	"net/http"
 )
 
+// Artist comments ... jçadjf
 type Artist struct {
-	Id             int
+	ID             int
 	Name           string
-	Resource_url   string
-	Releases_url   string
-	Uri            string
+	ResourceURL    string
+	ReleasesURL    string
+	URI            string
 	Realname       string
 	Profile        string
-	Data_quality   string
+	DataQuality    string
 	Namevariations []string
 	Aliases        []struct {
-		Id           int
-		Name         string
-		Resource_url string
+		ID          int
+		Name        string
+		ResourceURL string
 	}
 	Urls   []string
 	Images []struct {
-		Type         string
-		Width        int
-		Height       int
-		Uri          string
-		Uri150       string
-		Resource_url string
+		Type        string
+		Width       int
+		Height      int
+		URI         string
+		URI150      string
+		ResourceURL string
 	}
 }
 

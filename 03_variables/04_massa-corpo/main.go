@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var a float64 = 0
+	var a float64
 	var p float64
 	fmt.Print("digite a altura: ")
 	fmt.Scanf("%f", &a)

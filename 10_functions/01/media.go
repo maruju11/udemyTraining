@@ -6,6 +6,7 @@ import (
 	"os"
 )
 
+// Media comentário
 func Media(xs []float64) float64 {
 	total := 0.0
 	for _, soma := range xs {

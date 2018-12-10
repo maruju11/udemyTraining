@@ -24,6 +24,7 @@ func main() {
 	fmt.Println(buckets)
 }
 
+// HashBucket comment
 func HashBucket(word string, buckets int) int {
 	var sum int
 	for _, v := range word {

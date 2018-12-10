@@ -18,6 +18,7 @@ type MyType struct {
 	x, y int
 }
 
+// Format definition - comment
 func (T MyType) Format(s fmt.State, c rune) { fmt.Fprintf(s, "(%d, %d)", T.x, T.y) }
 
 // MyDtype this the dtype of MyType. This value is populated in the init() function below

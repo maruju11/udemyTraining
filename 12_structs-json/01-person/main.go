@@ -2,20 +2,25 @@ package main
 
 import "fmt"
 
+// Person comment
 type Person struct {
 	Name string
 	Last string
 	Age  int
 }
 
+// DoubleAero comment
 type DoubleAero struct {
 	Person
 	LicenceToKill bool
 }
 
+// Greeting comment
 func (p Person) Greeting() {
 	fmt.Println("função-greeting")
 }
+
+// Greeting DoubleAero comments
 func (dz DoubleAero) Greeting() {
 	fmt.Println("DoubleAero")
 }

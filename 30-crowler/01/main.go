@@ -102,7 +102,7 @@ var fetcher = &fakeFetcher{
 			"http://fairon.com.br/erp-multiempresa/",
 		},
 	},
-	"http://fairon.com.br/pkg/os/": &fakeResult{
+	"http://fairon.com.br/": &fakeResult{
 		"Package os",
 		[]string{
 			"http://fairon.com.br/",
